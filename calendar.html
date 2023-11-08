@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+  <script src="https://eventsapi.onrender.com/api"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <title>document</title>
+</head>
+
+<body>
+  <div id="jobs">
+    <h1>Organize your schedule</h1>
+    <br><br>
+    
+    <div id="add">
+      <button onclick="addEvent()">Add event</button>
+      <br></br>
+      <input type="text" placeholder="enter title" id="title">
+      <input type="date" id="date">
+    </div>
+
+    <br></br>
+    <div id="delete">
+      <button onclick="deleteEvent()">Delete event</button>
+      <ul id="myList"></ul>
+    </div>
+
+    <br></br>
+
+    <div id="update">
+      <button onclick="update()">Update event</button>
+      <ul id="myList2"></ul>
+    </div>
+
+  </div>
+  <div id="calendar"></div>
+  <script src="calendar.js"></script>
+
+</body>
+
+</html>
