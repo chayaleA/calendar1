@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     calendar.render();
   });
 });
-
+//I am up
 function addEvent() {
   var title = document.getElementById("title").value;
   var date = document.getElementById("date").value;
